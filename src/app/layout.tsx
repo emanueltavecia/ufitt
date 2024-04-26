@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
 import { Titillium_Web } from "next/font/google";
 import "./globals.css";
+import { cn } from "@/lib/utils";
 
-const titilliumWeb = Titillium_Web({ subsets: ['latin'], weight: ["200", "300", "400", "600", "700"] })
+const fontSans = Titillium_Web({
+  subsets: ['latin'],
+  weight: ['200', '300', '400', '600', '700'],
+  variable: '--font-sans',
+})
 
 export const metadata: Metadata = {
   title: "uFitt - Cálculo de GEB",
@@ -16,7 +21,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={titilliumWeb.className}>{children}</body>
+      <body
+        className={cn(
+          'min-h-screen bg-gradient-to-r from-blue-900 to-slate-950 font-sans antialiased overflow-hidden',
+          fontSans.variable
+        )}
+      >
+        {children}
+      </body>
     </html>
   )
 }
