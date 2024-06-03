@@ -2,7 +2,7 @@
 
 **uFitt is a web application for calculating Basal Energy Expenditure based on the concepts of Algebraic Expressions**
 
-![uFitt project screenshot](./.github/cover.png)
+![uFitt project screenshot](./.github/screenshot.png)
 
 ## 🔗 Project Links
 
