@@ -43,7 +43,8 @@ export function HowWorksDialog() {
         </p>
 
         <Link
-          href="#"
+          href="https://drive.google.com/file/d/1L6ICFmpY-xBqdF7_4tNJatki6jo_9Sq0/view?usp=sharing"
+          target='_blank'
           className={twMerge(
             buttonVariants({ variant: 'link' }),
             'group p-0 text-left w-fit text-base flex gap-2 items-center'
